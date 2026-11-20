@@ -31,6 +31,27 @@
 			<path d="M8 58h40"/>
 		</svg>
 	</header>
+	<!-- BANNIÈRE DE COMMANDE -->
+<section id="order-banner" aria-labelledby="order-title">
+	<h2 id="order-title">Quel café souhaitez-vous commander ?</h2>
+
+	<form id="order-form">
+		<label for="coffee-choice">Votre café :</label>
+		<select id="coffee-choice" name="coffee" required>
+			<option value="">— Choisissez —</option>
+			<option>Espresso</option>
+			<option>Café allongé</option>
+			<option>Cappuccino</option>
+			<option>Latte</option>
+			<option>Mocha</option>
+			<option>Décaféiné</option>
+		</select>
+
+		<button type="submit">Commander</button>
+	</form>
+
+	<p id="order-message" role="status"></p>
+</section>
 
 	<!-- CONTENU PRINCIPAL -->
 	<main id="content">
