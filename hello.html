@@ -10,6 +10,17 @@
 	<link rel="stylesheet" href="./style.css">
 </head>
 
+<script>
+	const form = document.getElementById("order-form");
+	const message = document.getElementById("order-message");
+
+	form.addEventListener("submit", (event) => {
+		event.preventDefault();
+		const coffee = document.getElementById("coffee-choice").value;
+		message.textContent = `Merci ! Votre ${coffee.toLowerCase()} est en préparation ☕`;
+	});
+</script>
+
 <body>
 
 	<!-- EN-TÊTE -->
